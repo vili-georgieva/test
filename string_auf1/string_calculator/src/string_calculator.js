@@ -2,4 +2,5 @@
 function StringCalculator() {}
 StringCalculator.prototype.add = function(string_numbers) {
 	//
+	if
 };
