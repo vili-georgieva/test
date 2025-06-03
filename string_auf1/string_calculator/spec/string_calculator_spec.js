@@ -3,8 +3,27 @@ describe('String Calculator', function() {
 		calculator = new StringCalculator();
 	});
 
-	it('should find the spaceship at correct location', function() {
+	it('negative test', function() {
+		let map = "..........\n" +
+		".......X..\n" +
+		"..........\n" +
+		"..........\n" +
+		"..........\n" +
+		"..........";
 
-		expect(calculator.add('')).toEqual([7, 2]);
+		// 20 does not exist in the map, on purpose
+		expect(calculator.add(map)).toEqual([7, 20]);
+		});
+
+	it('should find the spaceship at correct location', function() {
+		let map = "..........\n" +
+		"..........\n" +
+		"..........\n" +
+		".......X..\n" +
+		"..........\n" +
+		"..........";
+
+
+		expect(calculator.add(map)).toEqual([7, 2]);
 		});
 });

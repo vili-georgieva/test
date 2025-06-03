@@ -18,15 +18,8 @@ function findSpaceship(map) {
 	return "Spaceship lost forever.";
 }
 function StringCalculator() { }
-StringCalculator.prototype.add = function (string_numbers) {
-	let map = "..........\n" +
-		"..........\n" +
-		"..........\n" +
-		".......X..\n" +
-		"..........\n" +
-		"..........";
-
-	const [x_coordinate, y_coordinate] = findSpaceship(map);
+StringCalculator.prototype.add = function (coordinates) {
+	const [x_coordinate, y_coordinate] = findSpaceship(coordinates);
 	// console log
 	//return [7, 2];
 	return [x_coordinate, y_coordinate];
