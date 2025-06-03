@@ -1,7 +1,13 @@
 //const { map } = require("jquery");
 
 // StringCalculator.js
-function StringCalculator() { }
+//function StringCalculator() { }
+
+function findSpaceship(map) {
+	
+	return [x, y]
+
+}
 StringCalculator.prototype.add = function (string_numbers) {
 	let map = "..........\n" +
 		"..........\n" +
@@ -10,5 +16,7 @@ StringCalculator.prototype.add = function (string_numbers) {
 		"..........\n" +
 		"..........";
 
-	return [7, 2];
+	const [x_coordinate, y_coordinate] = findSpaceship(map);
+	// console log
+	//return [7, 2];
 };
