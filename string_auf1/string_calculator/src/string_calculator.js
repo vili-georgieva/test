@@ -19,6 +19,9 @@ function findSpaceship(map) {
 }
 function StringCalculator() { }
 StringCalculator.prototype.add = function (coordinates) {
+	if(findSpaceship(coordinates) === "Spaceship lost forever.") {
+		return "Spaceship lost forever.";
+	}
 	const [x_coordinate, y_coordinate] = findSpaceship(coordinates);
 	// console log
 	//return [7, 2];
