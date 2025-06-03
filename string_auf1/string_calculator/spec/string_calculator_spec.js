@@ -3,7 +3,14 @@ describe('String Calculator', function() {
 		calculator = new StringCalculator();
 	});
 
-	it('should return 0 for an empty string', function() {
-		expect(calculator.add('')).toEqual(0);
+	it('should find the spaceship at correct location', function () {
+		const map =
+			"..........\n" +
+			"..........\n" +
+			"..........\n" +
+			".......X..\n" +
+			"..........\n" +
+			"..........";
+		expect(calculator.add(map)).toEqual([7, 2]);
 	});
 });
