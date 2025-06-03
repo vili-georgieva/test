@@ -20,9 +20,9 @@ function findSpaceship(map) {
 function StringCalculator() { }
 StringCalculator.prototype.add = function (string_numbers) {
 	let map = "..........\n" +
+		"..........\n" +
+		"..........\n" +
 		".......X..\n" +
-		"..........\n" +
-		"..........\n" +
 		"..........\n" +
 		"..........";
 
