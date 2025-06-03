@@ -23,7 +23,6 @@ describe('String Calculator', function () {
 			"..........\n" +
 			"..........";
 
-
 		expect(calculator.add(map)).toEqual([7, 2]);
 	});
 
@@ -34,7 +33,6 @@ describe('String Calculator', function () {
 			"..........\n" +
 			"..........\n" +
 			"..........";
-
 
 		expect(calculator.add(map)).toEqual("Spaceship lost forever.");
 	});
